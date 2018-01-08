@@ -12,7 +12,10 @@ There is no Makefile at the moment. You will need a C-Compiler
 * gcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -c DRMDecrypt.c -o DRMDecrypt.o
 * gcc -o drmdecrypt aes.o DRMDecrypt.o
 
-## ToDo
+## Blog
 
-* Fancy output (progressbar, etc.)
-* Speedup of decryption (ASM, CPU assisted)
+There is a [blog](http://ivo2u.nl/5e) post explaining the how for this piece of code
+
+## Note
+
+This project is NOT maintained anymore, but should still work. If you make changes and do a pull request I will merge them and give credit where credit is due, but I will not take change requests anymore.
