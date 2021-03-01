@@ -1,0 +1,4 @@
+#!/bin/sh
+gcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -c aes.c -o aes.o
+gcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -c DRMDecrypt.c -o DRMDecrypt.o
+gcc -o drmdecrypt aes.o DRMDecrypt.o

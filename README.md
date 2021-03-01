@@ -16,18 +16,10 @@ There is no Makefile at the moment. You will need a C-Compiler
 * gcc -o drmdecrypt aes.o DRMDecrypt.o
 
 
-# License - DWTFYWT
+## Blog
 
-          DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                   Version 2, December 2004
- 
-Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+There is a [blog](http://ivo2u.nl/5e) post explaining the how for this piece of code
 
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
- 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+## Note
 
- 0. You just DO WHAT THE FUCK YOU WANT TO.
+This project is NOT maintained anymore, but should still work. If you make changes and do a pull request I will merge them and give credit where credit is due, but I will not take change requests anymore.

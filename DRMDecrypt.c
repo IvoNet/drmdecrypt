@@ -236,7 +236,7 @@ int main( int argc, char *argv[] )
 
 //	printf("%13lld bytes to decrypt\n", filesize);
 //http://archives.seul.org/or/cvs/Feb-2007/msg00220.html
-	printf("%13I64u bytes to decrypt\n", filesize);
+	printf("%llu bytes to decrypt\n", filesize);
 
 	fread(buf, sizeof(unsigned char), 1024, inputfp);
 
@@ -267,7 +267,7 @@ int main( int argc, char *argv[] )
 				}
 			}else{
 				dec_count += 188;
-				printf("\r%13I64u", dec_count);
+				printf("%llu                      \r", dec_count);
 				process_section (buf , outdata);
 				fwrite(outdata,sizeof(unsigned char),188, outputfp);
 			}
@@ -277,7 +277,7 @@ int main( int argc, char *argv[] )
 	fclose(inputfp);
 	fclose(outputfp);
 //	printf("\ndrmdecrypt success: %I64u bytes decrypted from original %I64u!\n", dec_count, filesize);
-	printf(" decrypted OK!");
+	printf("Decrypted OK!\n");
 
 
 	return 1;
